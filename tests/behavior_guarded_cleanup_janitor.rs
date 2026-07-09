@@ -1,4 +1,4 @@
-// SPEC-MANAGED: projects/preview/external-contracts/behavior/guarded-cleanup-janitor.md#guarded-cleanup-janitor
+// SPEC-MANAGED: apps/preview/external-contracts/behavior/guarded-cleanup-janitor.md#guarded-cleanup-janitor
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec guarded-cleanup-janitor

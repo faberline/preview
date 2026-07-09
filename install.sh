@@ -4,7 +4,7 @@
 # Releases and drops it on your PATH.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/chrischeng-c4/axiom/main/projects/preview/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/chrischeng-c4/axiom/main/apps/preview/install.sh | sh
 #
 # Env overrides:
 #   PREVIEW_VERSION   tag to install (default: latest preview@* release)

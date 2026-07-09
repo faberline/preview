@@ -100,7 +100,7 @@ Preview can promote its CI-rendered `PreviewEnvironment` model into a
 Kubernetes-native controller when the target GKE cluster's CRD/RBAC/GitOps
 policy is known.
 Gate Inventory:
-- pending: projects/preview/tests/kind_lifecycle.rs
+- pending: apps/preview/tests/kind_lifecycle.rs
 
 | Work Root | Kind | WI | Impl | Verification | Maturity | Gate / Evidence |
 |---|---|---:|---|---|---|---|
@@ -180,7 +180,7 @@ The first renderer assumes:
 Install the release binary for CI runners or SRE laptops:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/chrischeng-c4/axiom/main/projects/preview/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/chrischeng-c4/axiom/main/apps/preview/install.sh | sh
 ```
 
 The installer follows the repo-wide binary convention:
@@ -193,7 +193,7 @@ The installer follows the repo-wide binary convention:
 ## CI/CD Templates
 
 Copyable local-first lifecycle templates live in
-`projects/preview/docs/ci-templates/`:
+`apps/preview/docs/ci-templates/`:
 
 - `github-actions-preview.yaml` for pull request open/update/rerun/close.
 - `gitlab-ci-preview.yml` for GitLab merge request pipelines.

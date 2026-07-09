@@ -1,6 +1,6 @@
 version = 1
 project = "preview"
-td_path = "projects/preview/tech-design"
+td_path = "apps/preview/tech-design"
 generated_at = "2026-07-05T05:45:12.160153+00:00"
 digest = "sha256:c18ebe17f94d777a341db9ddb0c271fa62e8019492ca921a6f2f949ad15f2f6c"
 

@@ -131,32 +131,32 @@ e2e_tests:
 
 ```yaml
 changes:
-  - path: "projects/preview/docs/ci-templates/README.md"
+  - path: "apps/preview/docs/ci-templates/README.md"
     action: add
     section: logic
     description: "Document the open/update/rerun and close cleanup lifecycle flow."
     impl_mode: hand-written
-  - path: "projects/preview/docs/ci-templates/README.md"
+  - path: "apps/preview/docs/ci-templates/README.md"
     action: add
     section: schema
     description: "Document required variables and local-first lifecycle order."
     impl_mode: hand-written
-  - path: "projects/preview/docs/ci-templates/github-actions-preview.yaml"
+  - path: "apps/preview/docs/ci-templates/github-actions-preview.yaml"
     action: add
     section: cli
     description: "Provide copyable GitHub Actions preview lifecycle."
     impl_mode: hand-written
-  - path: "projects/preview/docs/ci-templates/gitlab-ci-preview.yml"
+  - path: "apps/preview/docs/ci-templates/gitlab-ci-preview.yml"
     action: add
     section: cli
     description: "Provide copyable GitLab CI preview lifecycle."
     impl_mode: hand-written
-  - path: "projects/preview/docs/ci-templates/local-kind-lifecycle.sh"
+  - path: "apps/preview/docs/ci-templates/local-kind-lifecycle.sh"
     action: add
     section: cli
     description: "Provide local kind lifecycle script matching the tested path."
     impl_mode: hand-written
-  - path: "projects/preview/tests/local_cicd_contract.rs"
+  - path: "apps/preview/tests/local_cicd_contract.rs"
     action: modify
     section: unit-test
     description: "Validate required variables and command order across templates."

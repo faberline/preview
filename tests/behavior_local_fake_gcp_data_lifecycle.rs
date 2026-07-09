@@ -1,4 +1,4 @@
-// SPEC-MANAGED: projects/preview/external-contracts/behavior/local-fake-gcp-data-lifecycle.md#local-fake-gcp-data-lifecycle
+// SPEC-MANAGED: apps/preview/external-contracts/behavior/local-fake-gcp-data-lifecycle.md#local-fake-gcp-data-lifecycle
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec local-fake-gcp-data-lifecycle

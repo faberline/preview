@@ -4,7 +4,7 @@ set -euo pipefail
 
 usage() {
   cat <<'EOF'
-Usage: projects/preview/build.sh <debug|release>
+Usage: apps/preview/build.sh <debug|release>
 
 debug    Build preview and install target/debug/preview to ~/.cargo/bin/preview.
 release  Build preview in release mode and install target/release/preview.

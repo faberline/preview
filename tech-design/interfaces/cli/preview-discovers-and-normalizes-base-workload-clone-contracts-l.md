@@ -198,46 +198,46 @@ e2e_tests:
 
 ```yaml
 changes:
-  - path: "projects/preview/src/discover.rs"
+  - path: "apps/preview/src/discover.rs"
     action: add
     section: logic
     description: "Implement the discovery flow from kubectl JSON fetch through normalization and discovered contract output."
     impl_mode: hand-written
-  - path: "projects/preview/src/discover.rs"
+  - path: "apps/preview/src/discover.rs"
     action: add
     section: schema
     description: "Add BaseWorkloadContract data model plus kubectl discovery and normalization helpers."
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-src-discover-rs>"
-  - path: "projects/preview/src/lib.rs"
+  - path: "apps/preview/src/lib.rs"
     action: modify
     section: schema
     description: "Export discovery models and helpers."
     impl_mode: hand-written
-  - path: "projects/preview/src/render.rs"
+  - path: "apps/preview/src/render.rs"
     action: modify
     section: schema
     description: "Allow RenderInput to carry an optional discovered base contract and embed it in the workload clone plan."
     impl_mode: hand-written
-  - path: "projects/preview/src/main.rs"
+  - path: "apps/preview/src/main.rs"
     action: modify
     section: cli
     description: "Add preview discover-base and render --base-contract CLI surfaces."
     impl_mode: hand-written
-  - path: "projects/preview/tests/base_discovery_contract.rs"
+  - path: "apps/preview/tests/base_discovery_contract.rs"
     action: add
     section: unit-test
     description: "Cover no-cluster Kubernetes JSON fixture normalization, runtime field exclusion, and ambiguous workload rejection."
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-tests-base-discovery-contract-rs>"
-  - path: "projects/preview/tests/local_cicd_contract.rs"
+  - path: "apps/preview/tests/local_cicd_contract.rs"
     action: modify
     section: unit-test
     description: "Cover preview render --base-contract in the local CI lifecycle lane."
     impl_mode: hand-written
-  - path: "projects/preview/tests/kind_lifecycle.rs"
+  - path: "apps/preview/tests/kind_lifecycle.rs"
     action: modify
     section: e2e-test
     description: "Create a base Deployment/Service fixture and run preview discover-base before rendering the preview lifecycle."

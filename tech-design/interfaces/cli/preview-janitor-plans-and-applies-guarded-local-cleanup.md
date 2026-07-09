@@ -145,34 +145,34 @@ e2e_tests:
 
 ```yaml
 changes:
-  - path: "projects/preview/src/cleanup.rs"
+  - path: "apps/preview/src/cleanup.rs"
     action: add
     section: logic
     description: "Implement JanitorPlan, guarded cleanup planning, protected namespace validation, and kubectl delete apply."
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-src-cleanup-rs>"
-  - path: "projects/preview/src/main.rs"
+  - path: "apps/preview/src/main.rs"
     action: modify
     section: cli
     description: "Add preview cleanup plan/apply commands."
     impl_mode: hand-written
-  - path: "projects/preview/src/lib.rs"
+  - path: "apps/preview/src/lib.rs"
     action: modify
     section: schema
     description: "Export janitor cleanup types and helpers."
     impl_mode: hand-written
-  - path: "projects/preview/tests/render_contract.rs"
+  - path: "apps/preview/tests/render_contract.rs"
     action: modify
     section: unit-test
     description: "Cover janitor keep/drain/delete/orphan/protected decisions."
     impl_mode: hand-written
-  - path: "projects/preview/tests/local_cicd_contract.rs"
+  - path: "apps/preview/tests/local_cicd_contract.rs"
     action: modify
     section: unit-test
     description: "Cover preview cleanup plan CLI output."
     impl_mode: hand-written
-  - path: "projects/preview/tests/kind_lifecycle.rs"
+  - path: "apps/preview/tests/kind_lifecycle.rs"
     action: modify
     section: e2e-test
     description: "Cover preview cleanup apply deleting only preview namespace and route-binding ConfigMap idempotently."

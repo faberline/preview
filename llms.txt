@@ -1,4 +1,4 @@
-<!-- SPEC-MANAGED: projects/preview/tech-design/semantic/preview-projects-preview.md#schema -->
+<!-- SPEC-MANAGED: apps/preview/tech-design/semantic/preview-projects-preview.md#schema -->
 <!-- CODEGEN-BEGIN -->
 # preview Agent Context
 
@@ -7,7 +7,7 @@
 ## Tech Design
 
 - [Tech Design](tech-design): implementation source of truth.
-- Validate: `aw td check projects/preview/tech-design`.
+- Validate: `aw td check apps/preview/tech-design`.
 
 ## Capability Map
 

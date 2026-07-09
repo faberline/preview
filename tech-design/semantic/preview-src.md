@@ -1,13 +1,13 @@
 ---
 id: semantic-preview-src
-summary: Semantic coverage for "projects/preview/src"
+summary: Semantic coverage for "apps/preview/src"
 capability_refs:
   - id: "gke-uat-preview-environment-rendering"
     role: primary
     gap: "mr-scoped-namespace-projection"
     claim: "mr-scoped-namespace-projection"
     coverage: partial
-    rationale: "Semantic takeover coverage for existing source group `projects/preview/src`."
+    rationale: "Semantic takeover coverage for existing source group `apps/preview/src`."
   - id: "gke-uat-preview-environment-rendering"
     role: primary
     gap: "base-workload-discovery"
@@ -55,11 +55,11 @@ fill_sections: [schema, changes]
 ```yaml
 semantic_domain:
   key: "preview/src"
-  source_group: "projects/preview/src"
+  source_group: "apps/preview/src"
   coverage_kind: semantic
   evidence:
     source_units:
-      - path: "projects/preview/src/render.rs"
+      - path: "apps/preview/src/render.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["data_model", "service_method"]
@@ -123,8 +123,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "source"
           section_type: "schema"
-          domain: "projects/preview/src"
-      - path: "projects/preview/src/lib.rs"
+          domain: "apps/preview/src"
+      - path: "apps/preview/src/lib.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["source_unit"]
@@ -155,8 +155,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "source"
           section_type: "schema"
-          domain: "projects/preview/src"
-      - path: "projects/preview/src/apply.rs"
+          domain: "apps/preview/src"
+      - path: "apps/preview/src/apply.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["data_model", "service_method"]
@@ -199,8 +199,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "source"
           section_type: "schema"
-          domain: "projects/preview/src"
-      - path: "projects/preview/src/data.rs"
+          domain: "apps/preview/src"
+      - path: "apps/preview/src/data.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["data_model", "service_method"]
@@ -246,8 +246,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "source"
           section_type: "schema"
-          domain: "projects/preview/src"
-      - path: "projects/preview/src/cleanup.rs"
+          domain: "apps/preview/src"
+      - path: "apps/preview/src/cleanup.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["data_model", "service_method"]
@@ -278,8 +278,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "source"
           section_type: "schema"
-          domain: "projects/preview/src"
-      - path: "projects/preview/src/discover.rs"
+          domain: "apps/preview/src"
+      - path: "apps/preview/src/discover.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["data_model", "service_method"]
@@ -310,8 +310,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "source"
           section_type: "schema"
-          domain: "projects/preview/src"
-      - path: "projects/preview/src/router.rs"
+          domain: "apps/preview/src"
+      - path: "apps/preview/src/router.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["data_model", "service_method"]
@@ -351,8 +351,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "source"
           section_type: "schema"
-          domain: "projects/preview/src"
-      - path: "projects/preview/src/main.rs"
+          domain: "apps/preview/src"
+      - path: "apps/preview/src/main.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["data_model", "enum_model", "service_method"]
@@ -452,8 +452,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "source"
           section_type: "schema"
-          domain: "projects/preview/src"
-      - path: "projects/preview/src/model.rs"
+          domain: "apps/preview/src"
+      - path: "apps/preview/src/model.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["data_model", "enum_model"]
@@ -496,7 +496,7 @@ semantic_domain:
           ecosystem: "rust"
           role: "source"
           section_type: "schema"
-          domain: "projects/preview/src"
+          domain: "apps/preview/src"
 ```
 
 ## Changes
@@ -505,7 +505,7 @@ semantic_domain:
 ```yaml
 coverage_kind: semantic
 changes:
-  - path: "projects/preview/src/render.rs"
+  - path: "apps/preview/src/render.rs"
     action: modify
     section: schema
     description: |
@@ -513,7 +513,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-src-render-rs>"
-  - path: "projects/preview/src/lib.rs"
+  - path: "apps/preview/src/lib.rs"
     action: modify
     section: schema
     description: |
@@ -521,7 +521,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-src-lib-rs>"
-  - path: "projects/preview/src/apply.rs"
+  - path: "apps/preview/src/apply.rs"
     action: add
     section: schema
     description: |
@@ -529,7 +529,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-src-apply-rs>"
-  - path: "projects/preview/src/cleanup.rs"
+  - path: "apps/preview/src/cleanup.rs"
     action: add
     section: schema
     description: |
@@ -537,7 +537,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-src-cleanup-rs>"
-  - path: "projects/preview/src/data.rs"
+  - path: "apps/preview/src/data.rs"
     action: add
     section: schema
     description: |
@@ -545,7 +545,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-src-data-rs>"
-  - path: "projects/preview/src/discover.rs"
+  - path: "apps/preview/src/discover.rs"
     action: add
     section: schema
     description: |
@@ -553,7 +553,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-src-discover-rs>"
-  - path: "projects/preview/src/router.rs"
+  - path: "apps/preview/src/router.rs"
     action: modify
     section: schema
     description: |
@@ -561,7 +561,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-src-router-rs>"
-  - path: "projects/preview/src/main.rs"
+  - path: "apps/preview/src/main.rs"
     action: modify
     section: schema
     description: |
@@ -569,7 +569,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-src-main-rs>"
-  - path: "projects/preview/src/model.rs"
+  - path: "apps/preview/src/model.rs"
     action: modify
     section: schema
     description: |

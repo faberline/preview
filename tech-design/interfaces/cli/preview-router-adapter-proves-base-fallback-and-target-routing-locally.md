@@ -180,32 +180,32 @@ e2e_tests:
 
 ```yaml
 changes:
-  - path: "projects/preview/src/router.rs"
+  - path: "apps/preview/src/router.rs"
     action: modify
     section: logic
     description: "Add BaseRoute, RouteDecision, base fallback, fail-closed resolution, and route table loaders for rendered files and kubectl ConfigMaps."
     impl_mode: hand-written
-  - path: "projects/preview/src/main.rs"
+  - path: "apps/preview/src/main.rs"
     action: modify
     section: cli
     description: "Add preview router resolve CLI outputting JSON route decisions."
     impl_mode: hand-written
-  - path: "projects/preview/src/lib.rs"
+  - path: "apps/preview/src/lib.rs"
     action: modify
     section: schema
     description: "Export router adapter types and loaders."
     impl_mode: hand-written
-  - path: "projects/preview/tests/router_contract.rs"
+  - path: "apps/preview/tests/router_contract.rs"
     action: modify
     section: unit-test
     description: "Cover base fallback, header override, cookie routing, host mismatch, invalid-target fail-closed, and rendered-file route table loading."
     impl_mode: hand-written
-  - path: "projects/preview/tests/local_cicd_contract.rs"
+  - path: "apps/preview/tests/local_cicd_contract.rs"
     action: modify
     section: unit-test
     description: "Cover preview router resolve CLI decisions from rendered files."
     impl_mode: hand-written
-  - path: "projects/preview/tests/kind_lifecycle.rs"
+  - path: "apps/preview/tests/kind_lifecycle.rs"
     action: modify
     section: e2e-test
     description: "Load route-binding ConfigMaps from kind and resolve a preview target through the local adapter."

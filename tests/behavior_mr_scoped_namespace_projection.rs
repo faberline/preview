@@ -1,4 +1,4 @@
-// SPEC-MANAGED: projects/preview/external-contracts/behavior/mr-scoped-namespace-projection.md#mr-scoped-namespace-projection
+// SPEC-MANAGED: apps/preview/external-contracts/behavior/mr-scoped-namespace-projection.md#mr-scoped-namespace-projection
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec mr-scoped-namespace-projection

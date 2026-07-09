@@ -1,4 +1,4 @@
-// SPEC-MANAGED: projects/preview/external-contracts/behavior/router-target-ec.md#router-target-ec
+// SPEC-MANAGED: apps/preview/external-contracts/behavior/router-target-ec.md#router-target-ec
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec router-target-ec

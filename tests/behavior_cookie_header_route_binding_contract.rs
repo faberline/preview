@@ -1,4 +1,4 @@
-// SPEC-MANAGED: projects/preview/external-contracts/behavior/cookie-header-route-binding-contract.md#cookie-header-route-binding-contract
+// SPEC-MANAGED: apps/preview/external-contracts/behavior/cookie-header-route-binding-contract.md#cookie-header-route-binding-contract
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec cookie-header-route-binding-contract

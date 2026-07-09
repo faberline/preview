@@ -195,39 +195,39 @@ e2e_tests:
 
 ```yaml
 changes:
-  - path: "projects/preview/src/apply.rs"
+  - path: "apps/preview/src/apply.rs"
     action: add
     section: logic
     description: "Implement manifest inventory, guardrails, kubectl apply, summary output, and GitOps bundle rendering."
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-src-apply-rs>"
-  - path: "projects/preview/src/render.rs"
+  - path: "apps/preview/src/render.rs"
     action: modify
     section: schema
     description: "Render plans/manifest-inventory.json and expose render_single_manifest for shared inventory generation."
     impl_mode: hand-written
-  - path: "projects/preview/src/main.rs"
+  - path: "apps/preview/src/main.rs"
     action: modify
     section: cli
     description: "Add preview apply and preview gitops render CLI surfaces."
     impl_mode: hand-written
-  - path: "projects/preview/src/lib.rs"
+  - path: "apps/preview/src/lib.rs"
     action: modify
     section: schema
     description: "Export apply and GitOps helper types."
     impl_mode: hand-written
-  - path: "projects/preview/tests/local_cicd_contract.rs"
+  - path: "apps/preview/tests/local_cicd_contract.rs"
     action: modify
     section: unit-test
     description: "Cover ordered inventory, apply plan-only summary, and deterministic GitOps bundle output."
     impl_mode: hand-written
-  - path: "projects/preview/tests/render_contract.rs"
+  - path: "apps/preview/tests/render_contract.rs"
     action: modify
     section: unit-test
     description: "Cover rendered manifest inventory presence and ordering."
     impl_mode: hand-written
-  - path: "projects/preview/tests/kind_lifecycle.rs"
+  - path: "apps/preview/tests/kind_lifecycle.rs"
     action: modify
     section: e2e-test
     description: "Use preview apply for direct apply, server dry-run, and idempotent re-apply in kind."

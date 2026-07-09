@@ -1,13 +1,13 @@
 ---
 id: semantic-preview-tests
-summary: Semantic coverage for "projects/preview/tests"
+summary: Semantic coverage for "apps/preview/tests"
 capability_refs:
   - id: "gke-uat-preview-environment-rendering"
     role: primary
     gap: "mr-scoped-namespace-projection"
     claim: "mr-scoped-namespace-projection"
     coverage: partial
-    rationale: "Semantic takeover coverage for existing source group `projects/preview/tests`."
+    rationale: "Semantic takeover coverage for existing source group `apps/preview/tests`."
   - id: "gke-uat-preview-environment-rendering"
     role: primary
     gap: "base-workload-discovery"
@@ -97,11 +97,11 @@ fill_sections: [schema, unit-test, changes]
 ```yaml
 semantic_domain:
   key: "preview/tests"
-  source_group: "projects/preview/tests"
+  source_group: "apps/preview/tests"
   coverage_kind: semantic
   evidence:
     source_units:
-      - path: "projects/preview/tests/router_contract.rs"
+      - path: "apps/preview/tests/router_contract.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["service_method", "test_case"]
@@ -138,8 +138,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "test"
           section_type: "unit-test"
-          domain: "projects/preview/tests"
-      - path: "projects/preview/tests/render_contract.rs"
+          domain: "apps/preview/tests"
+      - path: "apps/preview/tests/render_contract.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["service_method", "test_case"]
@@ -167,8 +167,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "test"
           section_type: "unit-test"
-          domain: "projects/preview/tests"
-      - path: "projects/preview/tests/base_discovery_contract.rs"
+          domain: "apps/preview/tests"
+      - path: "apps/preview/tests/base_discovery_contract.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["service_method", "test_case"]
@@ -193,8 +193,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "test"
           section_type: "unit-test"
-          domain: "projects/preview/tests"
-      - path: "projects/preview/tests/local_cicd_contract.rs"
+          domain: "apps/preview/tests"
+      - path: "apps/preview/tests/local_cicd_contract.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["service_method", "test_case"]
@@ -237,8 +237,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "test"
           section_type: "unit-test"
-          domain: "projects/preview/tests"
-      - path: "projects/preview/tests/k8s_object_contract.rs"
+          domain: "apps/preview/tests"
+      - path: "apps/preview/tests/k8s_object_contract.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["service_method", "test_case"]
@@ -266,8 +266,8 @@ semantic_domain:
           ecosystem: "rust"
           role: "test"
           section_type: "unit-test"
-          domain: "projects/preview/tests"
-      - path: "projects/preview/tests/kind_lifecycle.rs"
+          domain: "apps/preview/tests"
+      - path: "apps/preview/tests/kind_lifecycle.rs"
         language: "rust"
         ownership_state: "handwrite"
         generator_primitives: ["service_method", "test_case"]
@@ -301,7 +301,7 @@ semantic_domain:
           ecosystem: "rust"
           role: "test"
           section_type: "unit-test"
-          domain: "projects/preview/tests"
+          domain: "apps/preview/tests"
 ```
 
 ## Unit Test
@@ -314,12 +314,12 @@ coverage_kind: semantic
 strategy: preserve observed source behavior while semantic coverage is promoted toward generator primitives
 evidence:
   source_tests:
-    - path: "projects/preview/tests/router_contract.rs"
-    - path: "projects/preview/tests/render_contract.rs"
-    - path: "projects/preview/tests/base_discovery_contract.rs"
-    - path: "projects/preview/tests/local_cicd_contract.rs"
-    - path: "projects/preview/tests/k8s_object_contract.rs"
-    - path: "projects/preview/tests/kind_lifecycle.rs"
+    - path: "apps/preview/tests/router_contract.rs"
+    - path: "apps/preview/tests/render_contract.rs"
+    - path: "apps/preview/tests/base_discovery_contract.rs"
+    - path: "apps/preview/tests/local_cicd_contract.rs"
+    - path: "apps/preview/tests/k8s_object_contract.rs"
+    - path: "apps/preview/tests/kind_lifecycle.rs"
 ---
 requirementDiagram
 
@@ -334,43 +334,43 @@ element UT_SOURCE_TESTS {
 ```yaml
 coverage_kind: semantic
 changes:
-  - path: "projects/preview/tests/router_contract.rs"
+  - path: "apps/preview/tests/router_contract.rs"
     action: modify
     section: schema
     description: |
       Test source inventory and symbol evidence are covered by this semantic TD.
     impl_mode: hand-written
-  - path: "projects/preview/tests/render_contract.rs"
+  - path: "apps/preview/tests/render_contract.rs"
     action: modify
     section: schema
     description: |
       Test source inventory and symbol evidence are covered by this semantic TD.
     impl_mode: hand-written
-  - path: "projects/preview/tests/base_discovery_contract.rs"
+  - path: "apps/preview/tests/base_discovery_contract.rs"
     action: add
     section: schema
     description: |
       Base discovery fixture normalization and failure tests are covered by this semantic TD.
     impl_mode: hand-written
-  - path: "projects/preview/tests/local_cicd_contract.rs"
+  - path: "apps/preview/tests/local_cicd_contract.rs"
     action: modify
     section: schema
     description: |
       Local CI/CD command lifecycle smoke evidence is covered by this semantic TD.
     impl_mode: hand-written
-  - path: "projects/preview/tests/k8s_object_contract.rs"
+  - path: "apps/preview/tests/k8s_object_contract.rs"
     action: modify
     section: schema
     description: |
       Test source inventory and symbol evidence are covered by this semantic TD.
     impl_mode: hand-written
-  - path: "projects/preview/tests/kind_lifecycle.rs"
+  - path: "apps/preview/tests/kind_lifecycle.rs"
     action: modify
     section: schema
     description: |
       Test source inventory and symbol evidence are covered by this semantic TD.
     impl_mode: hand-written
-  - path: "projects/preview/tests/router_contract.rs"
+  - path: "apps/preview/tests/router_contract.rs"
     action: modify
     section: unit-test
     description: |
@@ -378,7 +378,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-tests-router-contract-rs>"
-  - path: "projects/preview/tests/render_contract.rs"
+  - path: "apps/preview/tests/render_contract.rs"
     action: modify
     section: unit-test
     description: |
@@ -386,7 +386,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-tests-render-contract-rs>"
-  - path: "projects/preview/tests/base_discovery_contract.rs"
+  - path: "apps/preview/tests/base_discovery_contract.rs"
     action: add
     section: unit-test
     description: |
@@ -394,7 +394,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-tests-base-discovery-contract-rs>"
-  - path: "projects/preview/tests/local_cicd_contract.rs"
+  - path: "apps/preview/tests/local_cicd_contract.rs"
     action: modify
     section: unit-test
     description: |
@@ -402,7 +402,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-tests-local-cicd-contract-rs>"
-  - path: "projects/preview/tests/k8s_object_contract.rs"
+  - path: "apps/preview/tests/k8s_object_contract.rs"
     action: modify
     section: unit-test
     description: |
@@ -410,7 +410,7 @@ changes:
     impl_mode: hand-written
     replaces:
       - "<handwrite-tracker:projects-preview-tests-k8s-object-contract-rs>"
-  - path: "projects/preview/tests/kind_lifecycle.rs"
+  - path: "apps/preview/tests/kind_lifecycle.rs"
     action: modify
     section: unit-test
     description: |
