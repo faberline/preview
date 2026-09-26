@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/preview/external-contracts/behavior/local-router-adapter.md#local-router-adapter
+// SPEC-MANAGED: external-contracts/behavior/local-router-adapter.md#local-router-adapter
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec local-router-adapter

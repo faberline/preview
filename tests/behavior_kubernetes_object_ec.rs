@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/preview/external-contracts/behavior/kubernetes-object-ec.md#kubernetes-object-ec
+// SPEC-MANAGED: external-contracts/behavior/kubernetes-object-ec.md#kubernetes-object-ec
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec kubernetes-object-ec

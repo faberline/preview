@@ -4,12 +4,12 @@
 # Releases and drops it on your PATH.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/chrischeng-c4/axiom/main/apps/preview/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/faberline/preview/main/install.sh | sh
 #
 # Env overrides:
 #   PREVIEW_VERSION   tag to install (default: latest preview@* release)
 #   PREVIEW_INSTALL   install dir (default: $HOME/.local/bin)
-#   PREVIEW_REPO      gh repo (default: chrischeng-c4/axiom)
+#   PREVIEW_REPO      gh repo (default: faberline/preview)
 #   GH_TOKEN          GitHub token for private-repo fetch (also: GITHUB_TOKEN).
 #                     If unset and `gh` is logged in, `gh auth token` is used.
 #
@@ -20,7 +20,7 @@
 #   3  missing curl / tar
 set -eu
 
-REPO="${PREVIEW_REPO:-chrischeng-c4/axiom}"
+REPO="${PREVIEW_REPO:-faberline/preview}"
 INSTALL_DIR="${PREVIEW_INSTALL:-$HOME/.local/bin}"
 VERSION="${PREVIEW_VERSION:-latest}"
 TOKEN="${GH_TOKEN:-${GITHUB_TOKEN:-}}"

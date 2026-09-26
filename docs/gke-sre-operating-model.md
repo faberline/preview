@@ -68,7 +68,7 @@ Use the same model through progressively stronger deployment forms:
    run the same reconcile logic as an operator.
 
 Copyable GitHub Actions, GitLab CI, and local kind lifecycle templates live in
-`apps/preview/docs/ci-templates/`. They keep registry, cluster context, base
+`docs/ci-templates/`. They keep registry, cluster context, base
 namespace, app, host, and TTL parameterized so GKE-specific values are isolated
 to pipeline variables.
 

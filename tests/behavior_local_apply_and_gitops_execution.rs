@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/preview/external-contracts/behavior/local-apply-and-gitops-execution.md#local-apply-and-gitops-execution
+// SPEC-MANAGED: external-contracts/behavior/local-apply-and-gitops-execution.md#local-apply-and-gitops-execution
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec local-apply-and-gitops-execution

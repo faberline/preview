@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/preview/external-contracts/behavior/render-contract-ec.md#render-contract-ec
+// SPEC-MANAGED: external-contracts/behavior/render-contract-ec.md#render-contract-ec
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec render-contract-ec

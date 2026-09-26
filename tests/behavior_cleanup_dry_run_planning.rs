@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/preview/external-contracts/behavior/cleanup-dry-run-planning.md#cleanup-dry-run-planning
+// SPEC-MANAGED: external-contracts/behavior/cleanup-dry-run-planning.md#cleanup-dry-run-planning
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec cleanup-dry-run-planning

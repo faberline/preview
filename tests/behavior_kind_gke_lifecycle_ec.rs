@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/preview/external-contracts/behavior/kind-gke-lifecycle-ec.md#kind-gke-lifecycle-ec
+// SPEC-MANAGED: external-contracts/behavior/kind-gke-lifecycle-ec.md#kind-gke-lifecycle-ec
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec kind-gke-lifecycle-ec

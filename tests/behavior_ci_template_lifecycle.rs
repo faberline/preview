@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/preview/external-contracts/behavior/ci-template-lifecycle.md#ci-template-lifecycle
+// SPEC-MANAGED: external-contracts/behavior/ci-template-lifecycle.md#ci-template-lifecycle
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec ci-template-lifecycle

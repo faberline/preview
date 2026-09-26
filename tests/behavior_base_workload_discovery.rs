@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/preview/external-contracts/behavior/base-workload-discovery.md#base-workload-discovery
+// SPEC-MANAGED: external-contracts/behavior/base-workload-discovery.md#base-workload-discovery
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec base-workload-discovery

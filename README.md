@@ -104,7 +104,7 @@ policy is known.
   artifacts.
 - Gate — behavior: pending operator/CRD gate - CRD schema, RBAC, controller
   reconcile, route binding watch, namespace lifecycle, and GKE dry-run.
-- Source: `pending: apps/preview/tests/kind_lifecycle.rs`
+- Source: `pending: tests/kind_lifecycle.rs`
 - Evidence: pending operator/CRD implementation
 
 ## Model
@@ -181,20 +181,20 @@ The first renderer assumes:
 Install the release binary for CI runners or SRE laptops:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/chrischeng-c4/axiom/main/apps/preview/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/faberline/preview/main/install.sh | sh
 ```
 
 The installer follows the repo-wide binary convention:
 
 - `PREVIEW_VERSION` selects a `preview@*` release tag, defaulting to latest.
 - `PREVIEW_INSTALL` selects the install directory, defaulting to `$HOME/.local/bin`.
-- `PREVIEW_REPO` selects the GitHub repository, defaulting to `chrischeng-c4/axiom`.
+- `PREVIEW_REPO` selects the GitHub repository, defaulting to `faberline/preview`.
 - `GH_TOKEN` or `GITHUB_TOKEN` is used for private forks, with `gh auth token` fallback.
 
 ## CI/CD Templates
 
 Copyable local-first lifecycle templates live in
-`apps/preview/docs/ci-templates/`:
+`docs/ci-templates/`:
 
 - `github-actions-preview.yaml` for pull request open/update/rerun/close.
 - `gitlab-ci-preview.yml` for GitLab merge request pipelines.
